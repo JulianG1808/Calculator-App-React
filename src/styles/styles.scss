@@ -1,0 +1,21 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "League Spartan";
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+
+//UI Settings
+
+//Components
+@import './components/calculator'
+
+//Screens

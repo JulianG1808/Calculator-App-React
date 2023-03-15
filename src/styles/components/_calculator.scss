@@ -1,6 +1,6 @@
 .calculator_calcBox {
   background-color: transparent;
-  width: 27vw;
+  width: 30vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     top: 0;
     width: 100%;
     height: 10%;
@@ -25,15 +25,67 @@
       justify-content: center;
       align-items: center;
       font-weight: 600;
+      margin-left: 0.3em;
     }
-    
-    .calculator_theme {
-      font-size: 14px;
-      text-align: center;
+
+    .containerTheme {
+      width: 120px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 400;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 0.3rem;
+      
+      .calculator_theme {
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+
+      .containerSwitchTheme {
+        height: 100%;
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+
+        .numberOfTheme {
+          display: flex;
+          justify-content: space-around;
+          font-size: 13px;
+          width: 100%;
+          font-weight: 400;
+          height: 50%;
+        }
+
+        .buttonsTheme {
+          background-color: hsl(223, 31%, 20%);
+          height: 70%;
+          width: 100%;
+          border-radius: 50px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 5px;
+  
+          button {
+            width: 33%;
+            height: 100%;
+            border-radius: 50px;
+            background-color: transparent;
+            border: 0px;
+            transition: all .2s ease-out;
+
+          }
+  
+          button:focus {
+            background-color: hsl(6, 63%, 50%);
+          }
+        }
+      }
     }
   
   }
@@ -48,15 +100,19 @@
     .calculator_input {
       height: 100%;
       width: 100%;
-      font-size: 80px;
+      font-size: 50px;
+      word-wrap: word-break;
+      // max-width: 200px;
       font-weight: 600;
       color: white;
     // right: 0;
     // bottom: 0;
       display: flex;
       justify-content: end;
-    // align-items: start;
-      
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      overflow-y: hidden;
     }
   }
 

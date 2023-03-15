@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import Header from './header'
+import Screen from './screen'
+import Keyboard from './keyboard'
 
 const Calculator = () => {
 
@@ -7,8 +10,6 @@ const Calculator = () => {
   const operators = ['/' ,'*', '+', '-', '.']
 
   const updateCalc = (value) => {
-    console.log(calc)
-
     if(
       operators.includes(value) && calc == "" || 
       operators.includes(value) && operators.includes(calc.slice(-1)) 
@@ -43,48 +44,9 @@ const Calculator = () => {
 
   return (
     <div className="calculator_calcBox" id="Theme1">
-      <div className="calculator_header">
-        <p className="calculator_title">calc</p>
-        <div className='containerTheme'>
-          <div className="calculator_theme">THEME</div>
-          <div className='containerSwitchTheme'>
-            <div className='numberOfTheme'>
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-            </div>
-            <div className='buttonsTheme'>
-              <button></button>
-              <button></button>
-              <button></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section className="calculator_screen">
-        <p className="calculator_input" type="text" maxLength="5">{calc || "0"}</p>
-      </section>
-      <div className="calculator_keyboard">
-        <button className="calculator_keys" onClick={() => updateCalc('7')}>7</button>
-        <button className="calculator_keys" onClick={() => updateCalc('8')}>8</button>
-        <button className="calculator_keys" onClick={() => updateCalc('9')}>9</button>
-        <button className="calculator_keyDel" onClick={deleteLast}>DEL</button>
-        <button className="calculator_keys" onClick={() => updateCalc('4')}>4</button>
-        <button className="calculator_keys" onClick={() => updateCalc('5')}>5</button>
-        <button className="calculator_keys" onClick={() => updateCalc('6')}>6</button>
-        <button className="calculator_keys" onClick={() => updateCalc('+')}>+</button>
-        <button className="calculator_keys" onClick={() => updateCalc('1')}>1</button>
-        <button className="calculator_keys" onClick={() => updateCalc('2')}>2</button>
-        <button className="calculator_keys" onClick={() => updateCalc('3')}>3</button>
-        <button className="calculator_keys" onClick={() => updateCalc('-')}>-</button>
-        <button className="calculator_keys" onClick={() => updateCalc('.')}>.</button>
-        <button className="calculator_keys" onClick={() => updateCalc('0')}>0</button>
-        <button className="calculator_keys" onClick={() => updateCalc('/')}>/</button>
-        <button className="calculator_keys" onClick={() => updateCalc('*')}>x</button>
-        <button className="calculator_keyReset" onClick={resetCalc}>RESET</button>
-        <button className="calculator_keyEqual" onClick={throwResult}>=</button>
-        
-      </div>
+      <Header />
+      <Screen calc={calc}/>
+      <Keyboard updateCalc={updateCalc} throwResult={throwResult} resetCalc={resetCalc} deleteLast={deleteLast} />
     </div>
   )
 }

@@ -42,14 +42,28 @@ const Calculator = () => {
   }
 
   return (
-    <div className="calculator_calcBox">
+    <div className="calculator_calcBox" id="Theme1">
       <div className="calculator_header">
         <p className="calculator_title">calc</p>
-        <div className="calculator_theme">THEME</div>
+        <div className='containerTheme'>
+          <div className="calculator_theme">THEME</div>
+          <div className='containerSwitchTheme'>
+            <div className='numberOfTheme'>
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <div className='buttonsTheme'>
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="calculator_screen">
-        <div className="calculator_input">{calc || "0"}</div>
-      </div>
+      <section className="calculator_screen">
+        <p className="calculator_input" type="text" maxLength="5">{calc || "0"}</p>
+      </section>
       <div className="calculator_keyboard">
         <button className="calculator_keys" onClick={() => updateCalc('7')}>7</button>
         <button className="calculator_keys" onClick={() => updateCalc('8')}>8</button>

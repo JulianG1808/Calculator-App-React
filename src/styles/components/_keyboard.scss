@@ -1,5 +1,4 @@
-.keyboard_container {
-  background-color: hsl(223, 31%, 20%);
+.keyboard {
   width: 100%;
   height: 70%;
   border-radius: 10px;
@@ -10,60 +9,144 @@
   gap: 1.2em;
 
   .keys {
-    background-color: hsl(30, 25%, 89%);
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(221, 14%, 31%);
     font-size: 33px;
     font-weight: 730;
-    box-shadow: 0 3.5px 0px 0px hsl(28, 16%, 65%);
+    box-shadow: 0 4px 0px 0px;
+    border: 0;
    }
 
   .keys_delete {
-    background-color: hsl(225, 21%, 49%);
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(0, 0%, 100%);
     font-size: 27px;
     font-weight: 730;
-    box-shadow: 0 3.5px 0px 0px hsl(224, 28%, 35%);
-    border: 0px;
+    box-shadow: 0 3.5px 0px 0px;
+    border: 0;
    }
 
   .keys_reset {
     grid-column: 1/3;
-    background-color: hsl(225, 21%, 49%);
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(0, 0%, 100%);
     font-size: 27px;
     font-weight: 730;
-    box-shadow: 0 3.5px 0px 0px hsl(224, 28%, 35%);
-    border: 0px;
-
+    box-shadow: 0 3.5px 0px 0px;
+    border: 0;
   }
 
   .keys_equal {
     grid-column: 3/5;
-    background-color: hsl(6, 63%, 50%);
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 27px;
     font-weight: 730;
-    box-shadow: 0 3.5px 0px 0px hsl(6, 70%, 34%);
-    border: 0px;
-
+    box-shadow: 0 3.5px 0px 0px;
+    border: 0;
   }
 
   button:hover {
     cursor: pointer;
+  }
+}
+
+//----------------------------------------------THEME 1-------------------------------------------------------------------------------
+.keyboard.theme-1 {
+  background-color: hsl(223, 31%, 20%);
+
+  .keys {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+  }
+  
+  .keys_delete {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(224, 28%, 35%);
+
+  }
+
+  .keys_reset {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(224, 28%, 35%);
+  }
+
+  .keys_equal {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: hsl(6, 70%, 34%);
+  }
+}
+
+//----------------------------------------------THEME 2-------------------------------------------------------------------------------
+
+.keyboard.theme-2 {
+  background-color: hsl(0, 5%, 81%);
+
+  .keys {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow:hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+  }
+  
+  .keys_delete {
+    background-color: hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow:hsl(185, 58%, 25%);
+
+  }
+
+  .keys_reset {
+    background-color: hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow:hsl(185, 58%, 25%);
+  }
+
+  .keys_equal {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow:hsl(25, 99%, 27%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+
+//----------------------------------------------THEME 3-------------------------------------------------------------------------------
+
+.keyboard.theme-3 {
+  background-color: hsl(268, 71%, 12%);
+
+  .keys {
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow:hsl(281, 89%, 26%);
+  }
+
+  .keys_delete {
+    background-color: hsl(290, 70%, 36%);
+    color: hsl(0, 0%, 100%);
+    box-shadow:hsl(285, 91%, 52%);
+
+  }
+
+  .keys_reset {
+    background-color: hsl(290, 70%, 36%);
+    color: hsl(0, 0%, 100%);
+    box-shadow:hsl(285, 91%, 52%);
+  }
+
+  .keys_equal {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow:hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
   }
 }

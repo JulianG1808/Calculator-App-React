@@ -1,4 +1,4 @@
-.header_container {
+.header {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
@@ -6,7 +6,6 @@
   top: 0;
   width: 100%;
   height: 10%;
-  color: hsl(0, 0%, 100%);
   font-family: "League Spartan";
   
 
@@ -53,7 +52,6 @@
       }
 
       .buttonsTheme {
-        background-color: hsl(223, 31%, 20%);
         height: 70%;
         width: 100%;
         border-radius: 50px;
@@ -71,12 +69,45 @@
           transition: all .2s ease-out;
 
         }
-
-        button:focus {
-          background-color: hsl(6, 63%, 50%);
-        }
       }
     }
   }
+}
 
+
+
+.header.theme-1 {
+    color: hsl(0, 0%, 100%);
+    
+    .buttonsTheme {
+      background-color: hsl(223, 31%, 20%);
+      
+      button:focus {
+        background-color: hsl(6, 63%, 50%);
+      }
+    }
+}
+
+.header.theme-2 {
+  color: hsl(60, 10%, 19%);
+    
+    .buttonsTheme {
+      background-color: hsl(0, 5%, 81%);
+
+      button:focus {
+        background-color: hsl(25, 98%, 40%);
+      }
+    }
+}
+
+.header.theme-3 {
+  color: hsl(52, 100%, 62%);
+    
+    .buttonsTheme {
+      background-color: hsl(268, 71%, 12%);
+
+      button:focus {
+        background-color: hsl(176, 100%, 44%);
+      }
+    }
 }

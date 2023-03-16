@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from '../context/themeContext';
 
 const Keyboard = ({ updateCalc, deleteLast, resetCalc, throwResult}) => {
+
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className="keyboard_container">
+    <div className={`keyboard ${theme}`}>
         <button className="keys" onClick={() => updateCalc('7')}>7</button>
         <button className="keys" onClick={() => updateCalc('8')}>8</button>
         <button className="keys" onClick={() => updateCalc('9')}>9</button>

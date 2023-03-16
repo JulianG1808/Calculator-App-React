@@ -68,7 +68,11 @@
           border: 0px;
           transition: all .2s ease-out;
 
-        }
+          &:hover {
+            cursor: pointer;
+            filter: brightness(1.1);
+          }
+        }  
       }
     }
   }
@@ -84,12 +88,15 @@
       
       .btn.Active {
         background-color: hsl(6, 63%, 50%);
+        
+        &:hover {
+          filter: brightness(1.8);
+        }
       }
 
       .btn.Inactive {
         background-color: transparent;
       }
-
     }
 }
 
@@ -101,12 +108,15 @@
 
       .btn.Active {
         background-color: hsl(25, 98%, 40%);
+        
+        &:hover {
+          filter: brightness(1.4);
+        }
       }
 
       .btn.Inactive {
         background-color: transparent;
       }
-
     }
 }
 
@@ -118,11 +128,14 @@
 
       .btn.Active {
         background-color: hsl(176, 100%, 44%);
+        
+        &:hover {
+          filter: brightness(1.5);
+        }
       }
 
       .btn.Inactive {
         background-color: transparent;
-
       }
     }
 }

@@ -5,6 +5,7 @@ const Header = () => {
 
   const {theme, handleTheme } = useContext(ThemeContext)
 
+  console.log(theme)
   return (
     <div className={`header ${theme}`}>
       <p className="title">calc</p>
@@ -17,9 +18,9 @@ const Header = () => {
             <p>3</p>
           </div>
           <div className='buttonsTheme'>
-            <button onClick={() => handleTheme('theme-1')}></button>
-            <button onClick={() => handleTheme('theme-2')}></button>
-            <button onClick={() => handleTheme('theme-3')}></button>
+            <button className={theme === 'theme-1' ? 'btn Active' : 'btn Inactive'} onClick={() => handleTheme('theme-1')}></button>
+            <button className={theme === 'theme-2' ? 'btn Active' : 'btn Inactive'} onClick={() => handleTheme('theme-2')}></button>
+            <button className={theme === 'theme-3' ? 'btn Active' : 'btn Inactive'} onClick={() => handleTheme('theme-3')}></button>
           </div>
         </div>
       </div>

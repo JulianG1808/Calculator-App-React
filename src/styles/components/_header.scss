@@ -82,9 +82,14 @@
     .buttonsTheme {
       background-color: hsl(223, 31%, 20%);
       
-      button:focus {
+      .btn.Active {
         background-color: hsl(6, 63%, 50%);
       }
+
+      .btn.Inactive {
+        background-color: transparent;
+      }
+
     }
 }
 
@@ -94,9 +99,14 @@
     .buttonsTheme {
       background-color: hsl(0, 5%, 81%);
 
-      button:focus {
+      .btn.Active {
         background-color: hsl(25, 98%, 40%);
       }
+
+      .btn.Inactive {
+        background-color: transparent;
+      }
+
     }
 }
 
@@ -106,8 +116,13 @@
     .buttonsTheme {
       background-color: hsl(268, 71%, 12%);
 
-      button:focus {
+      .btn.Active {
         background-color: hsl(176, 100%, 44%);
+      }
+
+      .btn.Inactive {
+        background-color: transparent;
+
       }
     }
 }

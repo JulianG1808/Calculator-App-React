@@ -2,11 +2,13 @@
   width: 100%;
   height: 70%;
   border-radius: 10px;
-  padding: 2em;
+  padding: 1.5em;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   gap: 1.2em;
+  justify-content: center;
+  align-items: center;
 
   .keys {
     border-radius: 10px;
@@ -17,6 +19,8 @@
     font-weight: 700;
     box-shadow: 0 4px 0px 0px;
     border: 0;
+    width: 100%;
+    height: 100%;
    }
 
   .keys_delete {
@@ -24,9 +28,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 700;
     border: 0;
+    width: 100%;
+    height: 100%;
    }
 
   .keys_reset {
@@ -35,10 +41,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 700;
     box-shadow: 0 3.5px 0px 0px;
     border: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .keys_equal {
@@ -47,10 +55,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 700;
     box-shadow: 0 3.5px 0px 0px;
     border: 0;
+    width: 100%;
+    height: 100%;
   }
 
   button:hover {
@@ -200,6 +210,30 @@
       background-color: hsl(177, 92%, 70%);
       box-shadow: 0px 4px 0px 0px hsl(176, 100%, 44%);
       filter:brightness(1.5);
+    }
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .keyboard {
+    .keys {
+      width: 40px;
+      font-size: 16px;
+    }
+
+    .keys_delete {
+      font-size: 16px;
+
+    }
+
+    .keys_reset {
+      font-size: 16px;
+
+    }
+
+    .keys_equal {
+      font-size: 16px;
+
     }
   }
 }

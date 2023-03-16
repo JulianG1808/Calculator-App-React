@@ -10,7 +10,7 @@ const Header = () => {
     <div className={`header ${theme}`}>
       <p className="title">calc</p>
       <div className='containerTheme'>
-        <p>THEME</p>
+        <p className='theme-text'>THEME</p>
         <div className='switcherTheme'>
           <div className='numberOfTheme'>
             <p>1</p>

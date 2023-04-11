@@ -8,6 +8,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Test In You Own Computer](#Test In You Own Computer)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)

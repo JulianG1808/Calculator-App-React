@@ -41,6 +41,14 @@ Mobile View
 - Solution URL: [View Code Source](https://github.com/JulianG1808/Calculator-App-React)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
+### Test In You Own Computer
+
+1. Clone this source code using the next URL `https://github.com/JulianG1808/Calculator-App-React.git` in a terminal like **GIT Bash** or another.
+3. Go to the folder **calculator-app-react** from your **terminal**.
+4. Execute the command `npm install` for install all the dependencies of the project.
+5. Execute the command `npm start`.
+7. Congratulations, you are viewing my weather app from your own computer.
+
 ## My process
 
 ### Built with

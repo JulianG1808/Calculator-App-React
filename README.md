@@ -8,7 +8,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-  - [Test In You Own Computer](#Test In You Own Computer)
+  - [Test In Your Own Computer](#test-in-your-own-computer)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -42,7 +42,7 @@ Mobile View
 - Solution URL: [View Code Source](https://github.com/JulianG1808/Calculator-App-React)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-### Test In You Own Computer
+### Test In Your Own Computer
 
 1. Clone this source code using the next URL `https://github.com/JulianG1808/Calculator-App-React.git` in a terminal like **GIT Bash** or another.
 3. Go to the folder **calculator-app-react** from your **terminal**.
